@@ -1,0 +1,34 @@
+/usr/bin/env bash /home/jaustin/work/isaac/6A3c_IK_reach/stage6a3c_offline_predict.sh
+(env_isaaclab) jaustin@jaustin:~/work/isaac/6A3c_IK_reach$ /usr/bin/env bash /home/jaustin/work/isaac/6A3c_IK_reach/stage6a3c_offline_predict.sh
+roboticstoolbox 1.4.4, numpy 1.26.4
+
+1. READY check
+   TCP        (0.3069, -0.0000, 0.4869) m
+   panda_hand (0.3069, -0.0000, 0.5903) m
+   tilt from straight down 0.0000 deg, heading -0.0000 deg
+   smallest limit margin 0.7156 rad (joint4)
+
+2. Face-aligned heading nearest READY's: +0 deg (0.0000 deg of wrist turn from READY)
+
+3-5. Grid (seed READY, tol 1e-10); home->ready takes 7.5 s, peak 0.5716 rad/s on joint4
+   cube (x, y)     IK  it s  TCP err mm  margin(j)    max move(j)  T s  floor m (link)          tcp-cube m  PASS
+   (0.35,-0.30)  ok   6 1      0.0000  0.5538(j4)  0.9339(j6)  3.0  0.2250 (panda_leftfinger)  0.1000      PASS
+   (0.50,-0.30)  ok   6 1      0.0000  0.9890(j4)  1.1115(j2)  3.5  0.2250 (panda_leftfinger)  0.1000      PASS
+   (0.65,-0.30)  ok   6 1      0.0027  1.0682(j2)  1.4800(j2)  5.0  0.2250 (panda_leftfinger)  0.1000      PASS
+   (0.35,+0.00)  ok   5 1      0.0000  0.2059(j4)  0.9634(j6)  3.5  0.2250 (panda_leftfinger)  0.1000      PASS
+   (0.50,+0.00)  ok   5 1      0.0000  0.6843(j4)  0.9027(j6)  3.0  0.2250 (panda_leftfinger)  0.1000      PASS
+   (0.65,+0.00)  ok   5 1      0.0008  1.2629(j4)  1.2552(j2)  4.0  0.2250 (panda_leftfinger)  0.1000      PASS
+   (0.35,+0.30)  ok   6 1      0.0000  0.5538(j4)  0.9339(j6)  3.0  0.2250 (panda_leftfinger)  0.1000      PASS
+   (0.50,+0.30)  ok   6 1      0.0000  0.9890(j4)  1.1115(j2)  3.5  0.2250 (panda_rightfinger)  0.1000      PASS
+   (0.65,+0.30)  ok   6 1      0.0027  1.0682(j2)  1.4800(j2)  5.0  0.2250 (panda_rightfinger)  0.1000      PASS
+
+6. Mirror check, y = +/-0.30 pairs (mirror the -y arm across the x-z plane)
+   x 0.35: link origins differ by up to 0.0000 m, TCPs by 0.0000 mm; joint1+joint3 +0.7101 vs -0.7101
+   x 0.50: link origins differ by up to 0.0000 m, TCPs by 0.0000 mm; joint1+joint3 +0.5534 vs -0.5534
+   x 0.65: link origins differ by up to 0.0000 m, TCPs by 0.0000 mm; joint1+joint3 +0.5030 vs -0.5030
+
+9/9 grid points PASS all gates
+wrote runs/predict_20261101_153804/: ready_check.csv grid_predict.csv mirror_check.csv traj_centerline.csv
+wrote runs/predict_20261101_153804/predict.png
+(env_isaaclab) jaustin@jaustin:~/work/isaac/6A3c_IK_reach$ 
+
