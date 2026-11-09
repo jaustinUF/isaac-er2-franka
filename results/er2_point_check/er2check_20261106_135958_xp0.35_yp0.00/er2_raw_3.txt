@@ -1,0 +1,5 @@
+```json
+[
+  {"point": [732, 500], "label": "the center of the top face of the red cube"}
+]
+```

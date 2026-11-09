@@ -1,0 +1,122 @@
+{
+  "script": "stage6a3c_er2_point_check.py",
+  "started": "2026-11-06T14:03:58",
+  "cube_xy": [
+    0.65,
+    0.3
+  ],
+  "cube_size_m": 0.05,
+  "z0": 0.05,
+  "prompt": "Point to the center of the top face of the red cube.",
+  "model": "gemini-robotics-er-2-preview",
+  "calib": "/home/jaustin/work/isaac/6A3c_IK_reach/calib_dump.json",
+  "oracle_top_xyz": [
+    0.65,
+    0.3,
+    0.05
+  ],
+  "oracle_pixel_uv": [
+    770.4368578583538,
+    602.4108764390113
+  ],
+  "calls": [
+    {
+      "call": 1,
+      "api_ms": 2243.267996999748,
+      "error": null,
+      "n_points_valid": 1,
+      "label_log_only": "top face center",
+      "point_yx_1000": [
+        838.0,
+        602.0
+      ],
+      "pixel_uv": [
+        770.56,
+        603.36
+      ],
+      "pixel_error_px": 0.9570786389179716,
+      "target_xyz": [
+        0.6537352944633774,
+        0.30024696799974226,
+        0.05000000000000071
+      ],
+      "err_xyz_m": [
+        0.003735294463377392,
+        0.0002469679997422758,
+        7.077671781985373e-16
+      ],
+      "err_mm": 3.7434500024755906,
+      "on_top_face": true
+    },
+    {
+      "call": 2,
+      "api_ms": 2222.418972000014,
+      "error": null,
+      "n_points_valid": 1,
+      "label_log_only": "top face of the red cube",
+      "point_yx_1000": [
+        837.0,
+        601.0
+      ],
+      "pixel_uv": [
+        769.28,
+        602.64
+      ],
+      "pixel_error_px": 1.1793293478224165,
+      "target_xyz": [
+        0.6509018028804512,
+        0.2973306022558796,
+        0.05000000000000071
+      ],
+      "err_xyz_m": [
+        0.0009018028804511635,
+        -0.002669397744120394,
+        7.077671781985373e-16
+      ],
+      "err_mm": 2.8176111781977773,
+      "on_top_face": true
+    },
+    {
+      "call": 3,
+      "api_ms": 1961.5790959996957,
+      "error": null,
+      "n_points_valid": 1,
+      "label_log_only": "top face center",
+      "point_yx_1000": [
+        837.0,
+        602.0
+      ],
+      "pixel_uv": [
+        770.56,
+        602.64
+      ],
+      "pixel_error_px": 0.2601184215877884,
+      "target_xyz": [
+        0.6509018028804512,
+        0.30027446960494764,
+        0.05000000000000071
+      ],
+      "err_xyz_m": [
+        0.0009018028804511635,
+        0.00027446960494764694,
+        7.077671781985373e-16
+      ],
+      "err_mm": 0.9426462747129132,
+      "on_top_face": true
+    }
+  ],
+  "gripper_xyz": [
+    0.08442472666501999,
+    2.1023159206379205e-05,
+    0.9376611113548279
+  ],
+  "result": {
+    "n_ok": 3,
+    "n_calls": 3,
+    "mean_err_mm": 2.501235818462094,
+    "worst_err_mm": 3.7434500024755906,
+    "repeat_spread_px": 1.2799999999999727,
+    "all_on_top_face": true
+  },
+  "finished": "2026-11-06T14:04:06"
+}

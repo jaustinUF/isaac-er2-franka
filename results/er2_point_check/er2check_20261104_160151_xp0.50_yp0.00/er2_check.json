@@ -1,0 +1,122 @@
+{
+  "script": "stage6a3c_er2_point_check.py",
+  "started": "2026-11-04T16:01:51",
+  "cube_xy": [
+    0.5,
+    0.0
+  ],
+  "cube_size_m": 0.05,
+  "z0": 0.05,
+  "prompt": "Point to the center of the top face of the red cube.",
+  "model": "gemini-robotics-er-2-preview",
+  "calib": "/home/jaustin/work/isaac/6A3c_IK_reach/calib_dump.json",
+  "oracle_top_xyz": [
+    0.5,
+    0.0,
+    0.05
+  ],
+  "oracle_pixel_uv": [
+    640.000000000002,
+    564.4849501152406
+  ],
+  "calls": [
+    {
+      "call": 1,
+      "api_ms": 3860.6737090012757,
+      "error": null,
+      "n_points_valid": 1,
+      "label_log_only": "the center of the top face of the red cube",
+      "point_yx_1000": [
+        785.0,
+        500.0
+      ],
+      "pixel_uv": [
+        640.0,
+        565.2
+      ],
+      "pixel_error_px": 0.7150498847594235,
+      "target_xyz": [
+        0.5028415299685349,
+        7.248214414896095e-17,
+        0.05000000000000071
+      ],
+      "err_xyz_m": [
+        0.0028415299685349282,
+        7.248214414896095e-17,
+        7.077671781985373e-16
+      ],
+      "err_mm": 2.8415299685349282,
+      "on_top_face": true
+    },
+    {
+      "call": 2,
+      "api_ms": 2337.1736770004645,
+      "error": null,
+      "n_points_valid": 1,
+      "label_log_only": "the center of the top face of the red cube",
+      "point_yx_1000": [
+        784.0,
+        500.0
+      ],
+      "pixel_uv": [
+        640.0,
+        564.48
+      ],
+      "pixel_error_px": 0.004950115240603736,
+      "target_xyz": [
+        0.4999803269733043,
+        7.285829865283292e-17,
+        0.05000000000000071
+      ],
+      "err_xyz_m": [
+        -1.9673026695699036e-05,
+        7.285829865283292e-17,
+        7.077671781985373e-16
+      ],
+      "err_mm": 0.019673026695699036,
+      "on_top_face": true
+    },
+    {
+      "call": 3,
+      "api_ms": 2518.9406810004584,
+      "error": null,
+      "n_points_valid": 1,
+      "label_log_only": "the center of the top face of the red cube",
+      "point_yx_1000": [
+        785.0,
+        500.0
+      ],
+      "pixel_uv": [
+        640.0,
+        565.2
+      ],
+      "pixel_error_px": 0.7150498847594235,
+      "target_xyz": [
+        0.5028415299685349,
+        7.248214414896095e-17,
+        0.05000000000000071
+      ],
+      "err_xyz_m": [
+        0.0028415299685349282,
+        7.248214414896095e-17,
+        7.077671781985373e-16
+      ],
+      "err_mm": 2.8415299685349282,
+      "on_top_face": true
+    }
+  ],
+  "gripper_xyz": [
+    0.08442472666501999,
+    2.102316648233682e-05,
+    0.9376611113548279
+  ],
+  "result": {
+    "n_ok": 3,
+    "n_calls": 3,
+    "mean_err_mm": 1.9009109879218518,
+    "worst_err_mm": 2.8415299685349282,
+    "repeat_spread_px": 0.7200000000000273,
+    "all_on_top_face": true
+  },
+  "finished": "2026-11-04T16:02:01"
+}

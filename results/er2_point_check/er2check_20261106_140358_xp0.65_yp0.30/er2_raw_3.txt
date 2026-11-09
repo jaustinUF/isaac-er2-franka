@@ -1,0 +1,5 @@
+```json
+[
+  {"point": [837, 602], "label": "top face center"}
+]
+```
