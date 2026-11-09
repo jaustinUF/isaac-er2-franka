@@ -1,0 +1,2 @@
+tcp_x,tcp_y,tcp_z,hand_x,hand_y,hand_z,tilt_deg,heading_deg,min_limit_margin_rad,limiting_joint,q1_rad,q2_rad,q3_rad,q4_rad,q5_rad,q6_rad,q7_rad
+0.3069,-7.4255e-17,0.4869,0.3069,-6.5301e-17,0.5903,0.0000,-1.2722e-14,0.7156,4,0.0000,-0.7854,0.0000,-2.3562,0.0000,1.5708,0.7854
